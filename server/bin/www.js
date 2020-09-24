@@ -8,11 +8,6 @@ import debugLib from 'debug'
 import http from 'http'
 const debug = debugLib('dream-broker-assignment:server')
 
-/*
-var app = require('../app');
-var debug = require('debug')('dream-broker-assignment:server');
-var http = require('http');
-*/
 
 /**
  * Get port from environment and store in Express.
