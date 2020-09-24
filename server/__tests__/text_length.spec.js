@@ -5,5 +5,13 @@ describe("textLength", () => {
         expect(AnalyzeService.textLength("hello hi hei")).toEqual({ withSpaces : 12, withoutSpaces: 10})
     });
 
+    it("should return withspaces 7 and withoutspaces 5 for hello with two trailing spaces", () => {
+        expect(AnalyzeService.textLength("hello  ")).toEqual({ withSpaces : 7, withoutSpaces: 5})
+    });
+
+    it("should return withSpaces 0 and withoutSpaces 0 for empty string", () => {
+        expect(AnalyzeService.textLength("")).toEqual({ withSpaces : 0, withoutSpaces: 0})
+    });
+
 
 });
