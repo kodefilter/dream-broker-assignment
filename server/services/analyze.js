@@ -5,4 +5,9 @@ function textLength(inputText) {
     return { withSpaces: withSpaces, withoutSpaces: withoutSpaces }
 }
 
-export default { textLength }
+function wordCount(inputText){
+    const matches = inputText.match(/[\w\d\’\'-]+/gi)
+    return matches ? matches.length : 0
+}
+
+export default { textLength, wordCount }
