@@ -39,4 +39,12 @@ function characterCount(inputText) {
     return result
 }
 
-export default { textLength, wordCount, characterCount }
+function analyzeText(inputText){
+    return {
+      textLength: textLength(inputText),
+      wordCount: wordCount(inputText),
+      characterCount: characterCount(inputText),
+    }
+}
+
+export default { textLength, wordCount, characterCount, analyzeText }
