@@ -1,9 +1,13 @@
 import express from 'express';
-var router = express.Router();;
+var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+import AnalyzeService from '../services/analyze'
+
+/* POST to /analyze */
+router.post('/', function(req, res, next) {
+  const { text } = req.body
+  const result = AnalyzeService.textLength(text)
+  res.json(result)
 });
 
 export default router
