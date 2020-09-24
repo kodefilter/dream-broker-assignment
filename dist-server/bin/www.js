@@ -14,12 +14,6 @@ var _http = _interopRequireDefault(require("http"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var debug = (0, _debug["default"])('dream-broker-assignment:server');
-/*
-var app = require('../app');
-var debug = require('debug')('dream-broker-assignment:server');
-var http = require('http');
-*/
-
 /**
  * Get port from environment and store in Express.
  */
