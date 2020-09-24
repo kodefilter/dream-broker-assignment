@@ -1,4 +1,4 @@
-import AnalyzeService from '../services/analyze'
+import AnalyzeService from '../../services/analyze'
 
 describe("wordCount", () => {
     it("should return 3 for hello hi hei", () => {

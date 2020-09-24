@@ -1,4 +1,4 @@
-import AnalyzeService from '../services/analyze'
+import AnalyzeService from '../../services/analyze'
 
 describe("textLength", () => {
     it("should return withSpaces 12 and withoutSpaces 10 for hello hi hei", () => {

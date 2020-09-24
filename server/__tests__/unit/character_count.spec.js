@@ -1,4 +1,4 @@
-import AnalyzeService from '../services/analyze'
+import AnalyzeService from '../../services/analyze'
 
 describe("characterCount", () => {
     it("should return character count for hello hi hei", () => {
