@@ -19,6 +19,10 @@ var _index = _interopRequireDefault(require("./routes/index"));
 
 var _analyze = _interopRequireDefault(require("./routes/analyze"));
 
+var _apiErrorHandler = _interopRequireDefault(require("./middlewares/apiErrorHandler"));
+
+var _apiContentType = _interopRequireDefault(require("./middlewares/apiContentType"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var app = (0, _express.default)();
@@ -28,8 +32,10 @@ app.use(_express.default.urlencoded({
   extended: false
 }));
 app.use((0, _cookieParser.default)());
-app.use(_express.default.static(_path.default.join(__dirname, '../public')));
+app.use(_express.default.static(_path.default.join(__dirname, '../public'))); //app.use(apiContentType)
+
 app.use('/', _index.default);
 app.use('/analyze', _analyze.default);
+app.use(_apiErrorHandler.default);
 var _default = app;
 exports.default = _default;
