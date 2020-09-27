@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { response } from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
@@ -12,12 +12,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
-//app.use(apiContentType)
+//Custom middleware
+app.use(apiContentType)
+
 
 app.use('/', indexRouter);
 app.use('/analyze', analyzeRouter);
 
-
+//Custom middleware
 app.use(apiErrorHandler)
 
 
