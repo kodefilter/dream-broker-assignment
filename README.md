@@ -1,4 +1,4 @@
-![DreamBroker Text Analyzer CI/CD](https://github.com/prrdee/dream-broker-assignment/workflows/DB%20Programming%20Assignment%20CI/badge.svg)
+![](https://github.com/prrdee/dream-broker-assignment/workflows/DB%20Programming%20Assignment%20CI/CD/badge.svg)
 
 # Dream Broker Programming Assignment (Text Analyzer)
 
