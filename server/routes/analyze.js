@@ -6,6 +6,11 @@ import AnalyzeService from '../services/analyze'
 
 /* POST to /analyze */
 router.post('/', function (req, res, next) {
+
+  if ((req.method === 'POST') && !req.is('application/json')) {
+    next(new BadRequestError('Wrong Content Type'))
+  }
+
   try {
     const { text } = req.body
     const result = AnalyzeService.analyzeText(text)
