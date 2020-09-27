@@ -1,17 +1,24 @@
-export default class BaseError extends Error {
-  constructor(name, httpCode, description, isOperational) {
-    super(description);
-    Object.setPrototypeOf(this, new.target.prototype);
-  
-    this.name = name;
-    this.httpCode = httpCode;
-    this.isOperational = isOperational;
-  
-    Error.captureStackTrace(this);
+export default class ApiError extends Error {
+  constructor(statusCode, message, source) {
+    super()
+    this.statusCode = statusCode
+    this.message = message
+    this.source = source
   }
 }
 
-export class BadRequestError extends BaseError {
-  
+export class InternalServerError extends ApiError {
+  constructor(message = 'Internal Server Error', source) {
+    super(500, message, source)
+    this.message = message
+    this.source = source
+  }
+}
 
+export class BadRequestError extends ApiError {
+  constructor(message = 'Bad Request Error', source) {
+    super(400, message, source)
+    this.message = message
+    this.source = source
+  }
 }
