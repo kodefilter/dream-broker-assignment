@@ -17,7 +17,7 @@ Installation:
  
 To Start Server:
 
-```bash npm start ````  
+`npm start` 
 
 To Visit App:
 
