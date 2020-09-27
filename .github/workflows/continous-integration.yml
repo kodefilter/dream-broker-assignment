@@ -1,4 +1,4 @@
-name: DB Programming Assignment CI
+name: DB Programming Assignment CI/CD
 
 on:
     push:
