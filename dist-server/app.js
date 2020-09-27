@@ -19,8 +19,6 @@ var _analyze = _interopRequireDefault(require("./routes/analyze"));
 
 var _apiErrorHandler = _interopRequireDefault(require("./middlewares/apiErrorHandler"));
 
-var _apiContentType = _interopRequireDefault(require("./middlewares/apiContentType"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -32,9 +30,7 @@ app.use(_express.default.json());
 app.use(_express.default.urlencoded({
   extended: false
 }));
-app.use(_express.default.static(_path.default.join(__dirname, '../public'))); //Custom middleware
-
-app.use(_apiContentType.default);
+app.use(_express.default.static(_path.default.join(__dirname, '../public')));
 app.use('/', _index.default);
 app.use('/analyze', _analyze.default); //Custom middleware
 
