@@ -8,7 +8,7 @@ debug.log
 node_modules
 
 #Ignore build js files
-dist-server/**/*
+dist-server
 
 # OS metadata
 .DS_Store
