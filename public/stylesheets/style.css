@@ -1,8 +1,27 @@
 body {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 4em 1em;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #566b78;
+}
+
+h1 {
+  color: #333;
+  margin-top: 1em;
+  padding-top: 1em;
 }
 
 a {
   color: #00B7FF;
+}
+
+code {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color : darkred;
+  padding: 2px 4px;
+  vertical-align: text-bottom;
 }
