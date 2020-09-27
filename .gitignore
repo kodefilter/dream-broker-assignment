@@ -1,6 +1,5 @@
-logs
-results
-temp
+#Logs
+debug.log
 
 # API keys and secrets
 .env
