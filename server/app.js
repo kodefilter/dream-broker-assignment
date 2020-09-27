@@ -3,7 +3,6 @@ import path from 'path';
 import indexRouter from './routes/index';
 import analyzeRouter from './routes/analyze';
 import apiErrorHandler from './middlewares/apiErrorHandler'
-import apiContentType from './middlewares/apiContentType';
 var app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
