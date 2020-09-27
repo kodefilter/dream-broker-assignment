@@ -1,10 +1,15 @@
+logs
+results
+temp
+
 # API keys and secrets
 .env
 
-debug.log
-
 # Dependency directory
 node_modules
+
+#Ignore build js files
 dist-server/**/*
+
 # OS metadata
 .DS_Store
