@@ -30,7 +30,7 @@ On the internet : https://secret-plateau-40276.herokuapp.com/
 
 Its was pretty fun programming assignment to do and I've implemented this app in three different ways
 - without express
-- with express but es5, module, require stuff
+- with express and es5, module, require stuff
 - with express and es6, import, transpilation stuff (this repo)
 
 CI/CD was something new to me but it seems to be working so I am happy about that.
