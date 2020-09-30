@@ -36,6 +36,6 @@ Its was pretty fun programming assignment to do and I've implemented this app in
 
 CI/CD was something new to me but it seems to be working so I am happy about that.
 
-UPDATE : I've tried and implemented this assignment also in Java Spring Boot.
+## :mega: UPDATE : I've tried and implemented this assignment also in Java Spring Boot.
 
 GitHub Repo : https://github.com/prrdee/dream-broker-programming-assignment-java
